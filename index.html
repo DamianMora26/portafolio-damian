@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damian Morales Molina | Software Engineer Jr.</title>
+  <meta name="description"
+    content="Portafolio de Damian Morales Molina, ingeniero en software Jr. con proyectos full-stack, POS desktop y sistemas web.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">DM</span>
+      <span>Damian Morales</span>
+    </a>
+    <nav aria-label="Navegacion principal">
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Ingeniero en Software Jr. | Navojoa, Sonora</p>
+        <h1>Construyo sistemas que pasan del codigo a la operacion real.</h1>
+        <p class="lead">
+          Recien graduado de la Universidad Estatal de Sonora, con experiencia creando
+          aplicaciones full-stack, APIs REST y sistemas de escritorio. Mi caso mas fuerte:
+          un POS instalado en un negocio con impresora de tickets, etiquetas y scanner.
+        </p>
+        <div class="hero-actions" aria-label="Acciones principales">
+          <a class="button primary" href="#proyectos">Ver proyectos</a>
+          <a class="button" href="assets/CV_Damian.pdf" target="_blank" rel="noreferrer">Descargar CV</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Resumen rapido">
+        <div class="signal-card main-signal">
+          <span class="label">Caso aplicado</span>
+          <strong>My Little Bazar</strong>
+          <p>Sistema POS instalado y configurado para operacion diaria en mostrador.</p>
+        </div>
+        <div class="signal-grid">
+          <div class="signal-card">
+            <span class="label">Backend</span>
+            <strong>Java + Spring Boot</strong>
+          </div>
+          <div class="signal-card">
+            <span class="label">Frontend</span>
+            <strong>React + TypeScript</strong>
+          </div>
+          <div class="signal-card">
+            <span class="label">Datos</span>
+            <strong>PostgreSQL / MySQL / SQLite</strong>
+          </div>
+          <div class="signal-card">
+            <span class="label">Deploy</span>
+            <strong>Docker + Render</strong>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section split" id="experiencia">
+      <div>
+        <p class="section-kicker">Experiencia profesional</p>
+        <h2>Un proyecto instalado en un negocio, no solo en GitHub.</h2>
+      </div>
+      <article class="experience-card">
+        <div class="experience-head">
+          <img src="assets/bazar-logo.jpg" alt="Logo de My Little Bazar">
+          <div>
+            <h3>My Little Bazar | Sistema POS</h3>
+            <p>Practicas profesionales | Negocio minorista</p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li>Desarrolle e instale un sistema de ventas para operacion real en mostrador.</li>
+          <li>Integre scanner de codigo de barras, impresora de tickets e impresora de etiquetas.</li>
+          <li>Implemente punto de venta, inventario, saldos/fiado, devoluciones, reportes y etiquetas.</li>
+          <li>Valide flujos criticos de caja, tickets, devoluciones y control de productos antes de su uso diario.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section projects" id="proyectos">
+      <div class="section-heading">
+        <p class="section-kicker">Proyectos destacados</p>
+        <h2>Tres sistemas completos, cada uno con un problema distinto.</h2>
+      </div>
+
+      <article class="project-card featured">
+        <div class="project-media">
+          <img src="assets/bazar-banner.png" alt="Pantalla del sistema My Little Bazar">
+        </div>
+        <div class="project-body">
+          <span class="project-type">Desktop POS | Electron + React + SQLite</span>
+          <h3>My Little Bazar</h3>
+          <p>
+            Sistema para ventas, inventario y operacion de mostrador. El valor del proyecto
+            esta en la integracion con hardware y en que fue utilizado fuera del entorno escolar.
+          </p>
+          <div class="tag-row">
+            <span>Electron</span>
+            <span>React</span>
+            <span>SQLite</span>
+            <span>Tickets</span>
+            <span>Etiquetas</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/mayitobus-dashboard.png" alt="Dashboard de Autobuses Mayitos">
+          </div>
+          <div class="project-body">
+            <span class="project-type">Full-stack web | Deploy en Render</span>
+            <h3>Autobuses Mayitos</h3>
+            <p>
+              API REST y frontend para terminal de autobuses: rutas, viajes, asientos,
+              boletos, usuarios, roles, reportes y comprobantes.
+            </p>
+            <div class="tag-row">
+              <span>Java 21</span>
+              <span>Spring Boot</span>
+              <span>PostgreSQL</span>
+              <span>React</span>
+              <span>Docker</span>
+            </div>
+            <div class="link-row">
+              <a href="https://mayitobus-web.onrender.com" target="_blank" rel="noreferrer">Demo web</a>
+              <a href="https://mayitobus-api.onrender.com" target="_blank" rel="noreferrer">API</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">
+            <img src="assets/telesecundaria-bg.png" alt="Pantalla del sistema de telesecundaria">
+          </div>
+          <div class="project-body">
+            <span class="project-type">Sistema escolar | PHP + React + MySQL</span>
+            <h3>Gestion Escolar Telesecundaria</h3>
+            <p>
+              Plataforma para administrar alumnos, maestros, aulas, materias, materiales,
+              prestamos, calificaciones, usuarios y reportes.
+            </p>
+            <div class="tag-row">
+              <span>PHP 8.2</span>
+              <span>React</span>
+              <span>MySQL</span>
+              <span>PHPMailer</span>
+              <span>Tailwind</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack" id="stack">
+      <div class="section-heading compact">
+        <p class="section-kicker">Tecnologias</p>
+        <h2>Stack principal</h2>
+      </div>
+      <div class="stack-grid">
+        <div>
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Spring Security, JWT, PHP, APIs REST, Maven.</p>
+        </div>
+        <div>
+          <h3>Frontend</h3>
+          <p>React, TypeScript, JavaScript, Vite, Tailwind CSS, Axios.</p>
+        </div>
+        <div>
+          <h3>Bases de datos</h3>
+          <p>PostgreSQL, MySQL/MariaDB, SQLite, Flyway, modelado relacional.</p>
+        </div>
+        <div>
+          <h3>Herramientas</h3>
+          <p>Git, GitHub, Docker, Render, Electron, pruebas unitarias, impresion local.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div>
+        <p class="section-kicker">Contacto</p>
+        <h2>Disponible para roles Jr. backend, full-stack o software developer.</h2>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:damian.mora2608@gmail.com">damian.mora2608@gmail.com</a>
+        <a href="tel:+526421139287">642 113 9287</a>
+        <a href="https://github.com/DamianMora26" target="_blank" rel="noreferrer">GitHub: DamianMora26</a>
+        <a href="https://www.linkedin.com/in/damian-morales-molina-68613a311" target="_blank" rel="noreferrer">LinkedIn:
+          damian-morales-molina</a>
+        <p>Ingles A2 | Español nativo</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Damian Morales Molina | Software Engineer Jr.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
