@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 :root {
-  --bg: #0b0f14;
-  --panel: #111822;
-  --panel-2: #151e2b;
-  --line: rgba(255, 255, 255, 0.1);
-  --text: #f4f7fb;
-  --muted: #a9b6c6;
-  --soft: #748294;
-  --blue: #4aa8ff;
-  --green: #37d39a;
-  --amber: #f2b94b;
-  --ink: #071019;
-  --radius: 8px;
-  --max: 1160px;
+  --bg: #030712;
+  --panel: #111827;
+  --panel-2: #1f2937;
+  --line: rgba(255, 255, 255, 0.08);
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --soft: #6b7280;
+  --blue: #3b82f6;
+  --green: #10b981;
+  --amber: #f59e0b;
+  --ink: #ffffff;
+  --radius: 12px;
+  --max: 1120px;
   color-scheme: dark;
 }
 
@@ -25,15 +27,16 @@ html {
 
 body {
   margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background:
-    linear-gradient(180deg, rgba(74, 168, 255, 0.08), transparent 32rem),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    var(--bg);
-  background-size: auto, 72px 72px, 72px 72px, auto;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.15), transparent),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 64px 64px, 64px 64px;
+  background-position: top center;
   color: var(--text);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 a {
@@ -188,12 +191,14 @@ h3 {
 .button.primary {
   border-color: transparent;
   background: var(--blue);
-  color: var(--ink);
+  color: #fff;
+  box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.39);
 }
 
 .button:hover,
 .link-row a:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  filter: brightness(1.1);
 }
 
 .hero-panel {
